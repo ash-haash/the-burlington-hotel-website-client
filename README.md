@@ -1,3 +1,16 @@
+# This a demo or practice NHS site. National Health Service of the UK website. For the learning perpose I tried to build a website like NHS.
+
+# This is the live site demo, although for some unknown deployment reason some features are not working properly, on local host google login works properly and shows user name on the navbar, but after deploying to netlify it is not working properly. I tried hosting to firebase but it wasn't working. #Live Link: https://react-auth-health-nhs-assignment10.netlify.app/
+
+# The main focus was to learn and implement React Authentication with firebase, I implemented google login and email password login method. 
+
+# I also used React Router in this project. User can visit to different routes without loading the site. This gives a smooth user experience.
+
+# Private Route is also used in this project to protect some data from unauthorised users, to access this data or route user have to login to the system.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
