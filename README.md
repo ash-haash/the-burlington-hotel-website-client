@@ -1,6 +1,8 @@
 # This a demo or practice NHS site. National Health Service of the UK website. For the learning perpose I tried to build a website like NHS.
 
-# This is the live site demo, although for some unknown deployment reason some features are not working properly, on local host google login works properly and shows user name on the navbar, but after deploying to netlify it is not working properly. I tried hosting to firebase but it wasn't working. #Live Link: https://react-auth-health-nhs-assignment10.netlify.app/
+# This is the live site demo, although for some unknown deployment reason some features are not working properly, on local host google login works properly and shows user name on the navbar, but after deploying to netlify it is not working properly. I tried hosting to firebase but it wasn't working. 
+
+# Live Link: https://the-nhs-uk.web.app/
 
 # The main focus was to learn and implement React Authentication with firebase, I implemented google login and email password login method. 
 
