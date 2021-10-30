@@ -2,14 +2,26 @@ import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail } from "firebase/auth";
+import { useHistory, useLocation } from 'react-router';
 
 const Login = () => {
     const { auth, signInUsingGoogle } = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/home';
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [isLogin, setIsLogin] = useState(false);
+
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+            .then(result => {
+                history.push(redirect_uri);
+                // setUser(result.user);
+            })
+    }
 
     const handleEmailChange = e => {
         setEmail(e.target.value);
@@ -69,10 +81,10 @@ const Login = () => {
     }
 
     return (
-        <Container className="pt-5 mt-3">
+        <Container className="pt-5 mt-4">
 
             <form onSubmit={handleRegistration}>
-                <h3 className="text-primary">Please {isLogin ? 'Login' : 'Register'}</h3>
+                <h3 className="text-black">Please {isLogin ? 'Login' : 'Register'}</h3>
                 <div className="row mb-3">
                     <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
                     <div className="col-sm-10">
@@ -98,9 +110,9 @@ const Login = () => {
                 <div className="row mb-3 text-danger text-center">
                     <p>{error}</p>
                 </div>
-                <button type="submit" className="btn mb-1 btn-primary">{isLogin ? 'Login' : 'Register'}</button><br />
-                <button onClick={signInUsingGoogle} className="btn mb-1 btn-primary">Google Login</button><br />
-                <button type="button" onClick={handleResetPassword} className="btn mb-1 btn-primary btn-sm">Reset Password</button>
+                <button type="submit" className="btn mb-1 btn-dark">{isLogin ? 'Login' : 'Register'}</button><br />
+                <button onClick={handleGoogleLogin} className="btn mb-1 btn-dark">Google Login</button><br />
+                <button type="button" onClick={handleResetPassword} className="btn mb-1 btn-dark btn-sm">Reset Password</button>
 
             </form>
 

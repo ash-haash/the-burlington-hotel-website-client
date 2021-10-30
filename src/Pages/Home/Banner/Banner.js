@@ -14,9 +14,9 @@ const Banner = () => {
                     src={banner1}
                     alt="First slide"
                 />
-                <Carousel.Caption className="text-primary bold" >
-                    <h3>We’re here for you</h3>
-                    <p>Helping you take control of your health and wellbeing.</p>
+                <Carousel.Caption className="text-white bolder" >
+                    <h3>STUNNING VIEWS OVER THE SOUTH COAST</h3>
+                    <p>VIEWS</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -26,9 +26,9 @@ const Banner = () => {
                     alt="Second slide"
                 />
 
-                <Carousel.Caption className="text-primary bold" >
-                    <h3>Help us help you get the treatment you need</h3>
-                    <p></p>
+                <Carousel.Caption className="text-white bold" >
+                    <h3>OUR BEAUTIFULLY DESIGNED ROOMS</h3>
+                    <p>ROOMS AND SUITES</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -38,9 +38,9 @@ const Banner = () => {
                     alt="Third slide"
                 />
 
-                <Carousel.Caption className="text-primary bold" >
-                    <h3>Your trust is our strength</h3>
-                    <p>Your complete guide to conditions, symptoms and treatments, including what to do and when to get help.</p>
+                <Carousel.Caption className="text-white bold" >
+                    <h3>OUR BEAUTIFULLY DESIGNED FUNCTION ROOMS</h3>
+                    <p>FUNCTIONS</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { useParams } from 'react-router';
 
-const ServiceDetails = ({ service }) => {
+const ServiceDetails = () => {
     const { serviceId } = useParams();
-    return (
-        <Container className="p-5 mt-3">
-            <h1>This is service details: {serviceId}</h1>
+    const [service, setService] = useState({});
 
+    useEffect(() => {
+        fetch(`http://localhost:5000/services/${serviceId}`)
+            .then(res => res.json())
+            .then(data => setService(data));
+    }, [])
+
+    return (
+        <Container className="p-5 mt-5">
+            <h2>{service.title}</h2>
+            <img style={{ width: '500px', margin: '30px 0px' }} src={service.img} alt="" />
+            <p>{service.description}</p>
 
 
         </Container>
