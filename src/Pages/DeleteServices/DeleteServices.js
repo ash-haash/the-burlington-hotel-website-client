@@ -10,7 +10,7 @@ const DeleteServices = () => {
     }, []);
 
     const handleDelete = id => {
-        const url = `https://obscure-shore-16166.herokuapp.com/${id}`;
+        const url = `https://obscure-shore-16166.herokuapp.com/services/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

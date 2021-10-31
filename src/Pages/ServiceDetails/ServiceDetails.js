@@ -7,7 +7,7 @@ const ServiceDetails = () => {
     const [service, setService] = useState({});
 
     useEffect(() => {
-        fetch(`https://obscure-shore-16166.herokuapp.com/${serviceId}`)
+        fetch(`https://obscure-shore-16166.herokuapp.com/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data));
     }, [])
