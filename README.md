@@ -1,14 +1,30 @@
-# This a demo or practice NHS site. National Health Service of the UK website. For the learning perpose I tried to build a website like NHS.
+# This is The Burlington Hotel website. For the learning perpose I tried to build a website like TBH.
 
-# This is the live site demo, although for some unknown deployment reason some features are not working properly, on local host google login works properly and shows user name on the navbar, but after deploying to netlify it is not working properly. I tried hosting to firebase but it wasn't working. 
+# Live site link: https://the-burlington-hotel.web.app/
 
-# Live Link: https://the-nhs-uk.web.app/
+# This projects is an assignment project on mongodb along with react authencatoin with firebase. There is one server side and one client side. 
 
-# The main focus was to learn and implement React Authentication with firebase, I implemented google login and email password login method. 
+# I deployed server side to the Heroku hosting side, and client side to google firebase. For storing data to server, we used mongodb atlas server.
 
-# I also used React Router in this project. User can visit to different routes without loading the site. This gives a smooth user experience.
+# This a React JS side, it includes React Authentication, Private Route, Router and many more. 
 
-# Private Route is also used in this project to protect some data from unauthorised users, to access this data or route user have to login to the system.
+# User can add and delete services from the side. Below are some data given, inserting this data to addService form will add a new service in the service section of home page. 
+
+// Title: EXECUTIVE/HONEYMOON SUITES
+// Description: Generously sized rooms offering a King Size bed, seating area, toilet and bath or shower en-suite.
+// Img url: https://www.theburlington.net/wp-content/uploads/2021/05/20210524-Burlington-Hotel_Capture_0106-HDR-Brighter-Medium.jpg
+
+# Put this data to add a new service, and then user can delete a service from added service from delete service route.
+
+
+
+
+
+
+
+
+
+
 
 
 
